@@ -13,14 +13,15 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
+
+    Burger burger;
+    List<Bun> bunList;
+    List<Ingredient> ingredientList;
+
     @Mock
     Bun bun;
     @Mock
-    Burger burger;
-    @Mock
     Database database;
-    List<Bun> bunList;
-    List<Ingredient> ingredientList;
 
     @Before
     public void setUp() {
